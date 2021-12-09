@@ -4,7 +4,7 @@
 
 <view name="video">
   <text name="nameLabel" extra="true">
-    <text>NINTENDO NES</text>
+    <text>NINTENDO NES HACKS</text>
   </text>
 
         <image name="tvoverlay2" extra="true">
