@@ -136,7 +136,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 </view>
 
-<view name="basic, detailed, video">
+<view name="video">
 
     <image name="background" extra="true">
         <tile>false</tile>
@@ -239,28 +239,6 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <pos>0 0</pos>
         </datetime>
         
-</view>
-
-<view name="basic, detailed">
-    <image name="md_image">
-        <tile>false</tile>
-        <origin>0.5 0.5</origin>
-        <pos>0.66 0.52</pos>
-        <maxSize>0.65 0.75</maxSize>
-    </image>
-        <image name="md_marquee">
-            <pos>0.6598958333333333 0.220</pos>
-            <origin>0.5 0.5</origin>
-            <maxSize>0.300 0.180</maxSize>
-        </image>
-        <image name="logo">
-            <path>./_assets/systems/${system.theme}.svg</path>
-			<path>./_assets/systems/${system.theme}.png</path>
-            <pos>0.705 0.865</pos>
-            <maxSize>0.296 0.122</maxSize>
-            <origin>0.5 0.5</origin>
-        </image>
-
 </view>
 
 <feature supported="video">
