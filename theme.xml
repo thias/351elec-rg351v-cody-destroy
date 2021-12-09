@@ -14,21 +14,30 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 <theme>
 <formatVersion>7</formatVersion>
 
-  	<variables>
-		<controllerSubsetName>Show controllers in system view</controllerSubsetName>
-	</variables>
-	
-	<subset name="controller" displayName="${controllerSubsetName}">
-        <include name="on" displayName="${on}"/>
-        <include name="off" displayName="${off}">./_art/settings/controllers.xml</include>
-    </subset>
+  <variables>
+    <selectedColor>FFAE00</selectedColor>
+    <carouselType>vertical</carouselType>
+  </variables>
 
-    <include subset="systemview" name="Standard mod" >./standardmod.xml</include>
-    <include subset="systemview" name="scanline mod" >./scanline.xml</include>
-    <include subset="systemview" name="UIscanline mod" >./uiscanline.xml</include>
+  <include subset="colorset" name="Orange"/>
+  <include subset="colorset" name="Ocean Blue">./_art/settings/color-ocean-blue.xml</include>
+  <include subset="colorset" name="Mint Green">./_art/settings/color-mint-green.xml</include>
 
+  <include subset="systemview" name="Standard mod" >./standardmod.xml</include>
+  <include subset="systemview" name="Scanline mod" >./scanline.xml</include>
+  <include subset="systemview" name="UIscanline mod" >./uiscanline.xml</include>
 
-<view name="system">
+  <subset name="controller" displayName="Display controllers in system view">
+    <include name="on" displayName="${on}"/>
+    <include name="off" displayName="${off}">./_art/settings/controllers.xml</include>
+  </subset>
+
+  <subset name="systemcarousel" displayName="System carousel orientation">
+    <include name="Vertical" displayName="Vertical"/>
+    <include name="Horizontal" displayName="Horizontal">./_art/settings/systemcarousel.xml</include>
+  </subset>
+
+  <view name="system">
     <image name="background" extra="true">
         <path>./_art/var/dot.png</path>
         <tile>false</tile>
@@ -54,7 +63,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     </image>
 
     <carousel name="systemcarousel">
-        <type>vertical</type>
+        <type>${carouselType}</type>
         <color>00000000</color>
         <origin>1 1</origin>
         <pos>1 1</pos>
@@ -136,7 +145,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
     <textlist name="gamelist">
         <selectorColor>000000</selectorColor>
-        <selectedColor>FFAE00</selectedColor>
+        <selectedColor>${selectedColor}</selectedColor>
         <selectorHeight>0.06</selectorHeight>
         <primaryColor>585858</primaryColor>
         <secondaryColor>FFFFFF</secondaryColor>
@@ -202,7 +211,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
         <fontSize>0.02</fontSize>
-        <color>FFAE00</color>
+        <color>${selectedColor}</color>
         <origin>0 0</origin>
         <pos>0.339 0.630</pos>
         <size>0.06 0.2</size>
@@ -329,7 +338,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<menuText name="menutext">
 	  <fontPath>./_art/Acre.otf</fontPath>
 	  <fontSize>.037</fontSize>
-	  <color>FFAE00</color>
+	  <color>${selectedColor}</color>
 	</menuText>
 	<menuTextEdit name="menutextedit">
       <inactive>./_art/assets/textinput_inactive.png</inactive>

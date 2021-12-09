@@ -147,7 +147,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
     <textlist name="gamelist">
         <selectorColor>000000</selectorColor>
-        <selectedColor>FFAE00</selectedColor>
+        <selectedColor>${selectedColor}</selectedColor>
         <selectorHeight>0.06</selectorHeight>
         <primaryColor>585858</primaryColor>
         <secondaryColor>FFFFFF</secondaryColor>
@@ -213,7 +213,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
         <fontSize>0.02</fontSize>
-        <color>FFAE00</color>
+        <color>${selectedColor}</color>
         <origin>0 0</origin>
         <pos>0.339 0.630</pos>
         <size>0.06 0.2</size>
@@ -341,7 +341,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<menuText name="menutext">
 	  <fontPath>./_art/Acre.otf</fontPath>
 	  <fontSize>.037</fontSize>
-	  <color>FFAE00</color>
+	  <color>${selectedColor}</color>
 	</menuText>
 	<menuTextEdit name="menutextedit">
       <inactive>./_art/assets/textinput_inactive.png</inactive>
