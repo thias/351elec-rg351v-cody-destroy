@@ -175,7 +175,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
       <color>FFFFFF</color>
       <fontSize>0.1</fontSize>
       <origin>0 0</origin>
-      <pos>0.01 0.01</pos>
+      <pos>0.01 0.02</pos>
       <size>0.90 0.08</size>
       <zIndex>50</zIndex>
     </text>
@@ -274,28 +274,14 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
   <view name="screen">
     <text name="clock">
-      <color>FFFFFF</color>
-      <fontSize>0.035</fontSize>
-      <pos>0.910 0.01</pos>
-      <size>0.09 0.058</size>
+      <color>FFFFFFA0</color>
+      <pos>0.915 0.925</pos>
+      <size>0.07 0.17</size>
       <alignment>right</alignment>
-      <verticalAlignment>center</verticalAlignment>
     </text>
     <batteryIndicator name="batteryIndicator">
-      <pos>0.855 0.01</pos>
-      <size>0.033 0.033</size>
-      <!--
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>
-      -->
       <color>FFFFFFA0</color>
-    </batteryIndicator>
-    <batteryIndicator name="batteryIndicator" tinyScreen="true">
-      <pos>0.915 0.013</pos>
+      <pos>0.915 0.005</pos>
       <size>0.07 0.07</size>
     </batteryIndicator>
   </view>
