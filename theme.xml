@@ -61,6 +61,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     </image>
     <carousel name="systemcarousel">
       <type>${carouselType}</type>
+      <defaultTransition>instant</defaultTransition>
       <color>00000000</color>
       <origin>1 1</origin>
       <pos>1 1</pos>
