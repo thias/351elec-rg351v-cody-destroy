@@ -179,6 +179,21 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
       <size>0.90 0.08</size>
       <zIndex>50</zIndex>
     </text>
+    <image name="tvoverlay2" extra="true">
+      <tile>false</tile>
+      <path>./${system.theme}.png</path>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <zIndex>49</zIndex>
+    </image>
+    <image name="md_image">
+      <tile>false</tile>
+      <origin>0.5 0.5</origin>
+      <pos>0.25 0.90</pos>
+      <maxSize>0.27 0.37</maxSize>
+      <zIndex>50</zIndex>
+      <rotation>-6</rotation>
+    </image>
     <!--
     <text name="md_description">
       <fontPath>./_art/Acre.otf</fontPath>
